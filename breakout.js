@@ -166,7 +166,7 @@
 					paddle.x = 0;  
 			});
 
-			document.addEventListener("touchstart" , function(e) {
+			document.addEventListener("touchmove" , function(e) {
 				var x = e.originalEvent.touches[0].pageX - canvas.getBoundingClientRect().left;
 				paddle.x = x - ( paddle.width / 2 );
 				if( (paddle.x + paddle.width) > 800 )
