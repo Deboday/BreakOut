@@ -53,7 +53,7 @@
 
 				//Game Complete Check
 
-				if( count == brickWall[i].length * brickWall[i][0].length )
+				if( count == brickWall.length * brickWall[0].length )
 				{
 					off = false;
 					clearInterval(inte);
