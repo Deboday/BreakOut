@@ -69,7 +69,6 @@
 						canvasContext.fillStyle = brickWall[i][j].color;
 						canvasContext.fillRect( brickWall[i][j].x , brickWall[i][j].y , 50 , 20 );
 					}
-				canvasContext.globalAlpha = 1;
 					
 				//Draw Paddle
 				canvasContext.fillStyle = '#0099cc';
