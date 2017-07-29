@@ -1,0 +1,28 @@
+p
+{
+    font-size:50px;
+	color : white;
+	text-shadow : 0px 0px 3px 0px white;
+    margin : 0px;
+    text-align: center;
+}
+
+html
+{
+	width : 1366px;
+	background-image:url(./wallpaper_abstract_by_roby293-d63c6ka.jpg);
+	background-attachment:scroll;
+}
+
+canvas
+{
+    float : right;
+    position: absolute;
+    left : 300px;
+    top : 100px;
+}
+
+video
+{
+    display: none;
+}
