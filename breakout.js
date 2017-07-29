@@ -157,14 +157,14 @@
 			
 			//Paddle Movement Using Mouse Move Event
 			
-			/*canvas.addEventListener("mousemove" , function(e) {
+			canvas.addEventListener("mousemove" , function(e) {
 				var x = e.pageX - canvas.getBoundingClientRect().left;
 				paddle.x = x - ( paddle.width / 2 );
 				if( (paddle.x + paddle.width) > 800 )
 					paddle.x = 800 - paddle.width;
 				if( paddle.x < 0 )
 					paddle.x = 0;  
-			});*/
+			});
 
 			document.addEventListener("touchmove" , function(e) {
 				event.preventDefault();
