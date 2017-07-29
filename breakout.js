@@ -167,6 +167,7 @@
 			});
 
 			document.addEventListener("touchmove" , function(e) {
+				e.preventDefault();
 				var x = e.originalEvent.touches[0].pageX - canvas.getBoundingClientRect().left;
 				paddle.x = x - ( paddle.width / 2 );
 				if( (paddle.x + paddle.width) > 800 )
