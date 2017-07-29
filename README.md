@@ -1,4 +1,4 @@
 # BreakOut
 Remake of the classic Atari Breakout
 
-Website - https://cdn.rawgit.com/Deboday/BreakOut/0ff3fad4/breakout.html
+Website - https://rawgit.com/Deboday/BreakOut/master/breakout.htmll
