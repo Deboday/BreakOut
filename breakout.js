@@ -51,12 +51,20 @@
 					gameRestart();
 				}
 
+				//Game Complete Check
+
+				if( count == brickWall[i].length * brickWall[i][0].length )
+				{
+					off = false;
+					clearInterval(inte);
+					gameRestart();
+				}
+
 				//Show Score
 				canvasContext.font = "30px Comic Sans MS";
 				canvasContext.fillStyle = "white";
 				canvasContext.fillText("Score : " + count, canvas.width/2 - 60, canvas.height/2);
 				canvasContext.fill();
-				console.log(count);
 
 				//Draw Canvas
 				canvasContext.fillStyle = "rgba(0,0,0,0.1)";
