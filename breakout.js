@@ -218,13 +218,13 @@
 			{
 				var x = temp.x;
 				var y = temp.y;
-				if( (ball.y + ball.radius) === y && (ball.x - ball.radius) >= x && (ball.x - ball.radius) <= x + 50 ) // Top Left
+				if( (ball.y + ball.radius) === y && (ball.x - 0) >= x && (ball.x - ball.radius) <= x + 50 ) // Top Left
 				{
 					ball.vertical = 'N';
 					normalMove();
 					return true;
 				}
-				if( (ball.y + ball.radius) === y && (ball.x + ball.radius) >= x && (ball.x + ball.radius) <= x + 50)  // Top Right
+				if( (ball.y + ball.radius) === y && (ball.x + 0) >= x && (ball.x + ball.radius) <= x + 50)  // Top Right
 				{
 					ball.vertical = 'N';
 					normalMove();
@@ -237,13 +237,13 @@
 			{
 				var x = temp.x;
 				var y = temp.y;
-				if( (ball.x + ball.radius) === x && (ball.y - ball.radius) >= y && (ball.y+ball.radius) <= y + 20 )
+				if( (ball.x + ball.radius) === x && (ball.y - 0) >= y && (ball.y - ball.radius) <= (y + 20) )
 				{
 					ball.horizontal = horizontal_change(ball.horizontal);
 					normalMove();
 					return true;
 				}
-				if( (ball.x + ball.radius) === x && (ball.y + ball.radius) >= y && (ball.y + ball.radius) <= y + 20)
+				if( (ball.x + ball.radius) === x && (ball.y + 0) >= y && (ball.y + ball.radius) <= (y + 20) )
 				{
 					ball.horizontal = horizontal_change(ball.horizontal);
 					normalMove();
@@ -256,13 +256,13 @@
 			{
 				var x = temp.x;
 				var y = temp.y;
-				if( (ball.x - ball.radius) === x + 50 && (ball.y - ball.radius) >= y && (ball.y - ball.radius) <= y + 20 )
+				if( (ball.x - ball.radius) === x + 50 && (ball.y - 0) >= y && (ball.y - ball.radius) <= (y + 20) )
 				{
 					ball.horizontal = horizontal_change(ball.horizontal);
 					normalMove();
 					return true;
 				}
-				if( (ball.x - ball.radius) === x + 50 && (ball.y + ball.radius) >= y && (ball.y + ball.radius) <= y + 20) 
+				if( (ball.x - ball.radius) === x + 50 && (ball.y + 0) >= y && (ball.y + ball.radius) <= (y + 20) )
 				{
 					ball.horizontal = horizontal_change(ball.horizontal);
 					normalMove();
@@ -275,13 +275,13 @@
 			{
 				var x = temp.x;
 				var y = temp.y;
-				if( (ball.y - ball.radius) === y + 20 && (ball.x - ball.radius) >= x && (ball.x - ball.radius) <= x + 50 ) 
+				if( (ball.y - ball.radius) === y + 20 && (ball.x - 0) >= x && (ball.x - ball.radius) <= (x + 50) ) 
 				{
 					ball.vertical = 'S';
 					normalMove();
 					return true;
 				}
-				if( (ball.y - ball.radius) === y + 20 && (ball.x + ball.radius) >= x && (ball.x + ball.radius) <= x + 50) 
+				if( (ball.y - ball.radius) === y + 20 && (ball.x +0) >= x && (ball.x + ball.radius) <= (x + 50) ) 
 				{
 					ball.vertical = 'S';
 					normalMove();
@@ -294,14 +294,14 @@
 			function collisionWithPaddle()
 			{
 				// Top Left Paddle Collision
-				if( (ball.y + ball.radius) === paddle.y && (ball.x - ball.radius) >= paddle.x && (ball.x - ball.radius) <= (paddle.x + paddle.width) )
+				if( (ball.y + ball.radius) === paddle.y && (ball.x -0) >= paddle.x && (ball.x - ball.radius) <= (paddle.x + paddle.width) )
 				{
 					ball.vertical = 'N';
 					normalMove();
 					return true;
 				}
 				//Top Right Paddle Collision
-				if( (ball.y + ball.radius) === paddle.y && (ball.x + ball.radius) >= paddle.x && (ball.x + ball.radius) <= (paddle.x + paddle.width) )
+				if( (ball.y + ball.radius) === paddle.y && (ball.x + 0) >= paddle.x && (ball.x + ball.radius) <= (paddle.x + paddle.width) )
 				{
 					ball.vertical = 'N';
 					normalMove();
