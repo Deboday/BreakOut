@@ -165,6 +165,17 @@
 				if( paddle.x < 0 )
 					paddle.x = 0;  
 			});
+
+			document.addEventListener("touchstart" , function(e) {
+				var x = e.originalEvent.touches[0].pageX - canvas.getBoundingClientRect().left;
+				paddle.x = x - ( paddle.width / 2 );
+				if( (paddle.x + paddle.width) > 800 )
+					paddle.x = 800 - paddle.width;
+				if( paddle.x < 0 )
+					paddle.x = 0;  
+			});
+
+			
 				
 			
 			// Moving the Ball
